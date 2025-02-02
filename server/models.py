@@ -10,6 +10,7 @@ metadata = MetaData(
     }
 )
 
+# Initialize SQLAlchemy without the app
 db = SQLAlchemy(metadata=metadata)
 
 
@@ -76,5 +77,9 @@ class RestaurantPizza(db.Model, SerializerMixin):
         return value
 
     def __repr__(self):
+<<<<<<< HEAD
         return f"<RestaurantPizza ${self.price}>"
 
+=======
+        return f"<RestaurantPizza ${self.price}>"
+>>>>>>> 503981c (routes and db)
